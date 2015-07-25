@@ -20,6 +20,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		11AC7AD11B64189B005BEEA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11AC7ACC1B641899005BEEA3 /* drank.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 11AC7AA51B641899005BEEA3;
+			remoteInfo = drank;
+		};
+		11AC7AD31B64189B005BEEA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11AC7ACC1B641899005BEEA3 /* drank.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 11AC7ABC1B641899005BEEA3;
+			remoteInfo = drankTests;
+		};
 		2AAB3E7A1B63F4F800884596 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2AAB3E5B1B63F4F700884596 /* Project object */;
@@ -37,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11AC7ACC1B641899005BEEA3 /* drank.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = drank.xcodeproj; path = drank/drank.xcodeproj; sourceTree = "<group>"; };
 		2AAB3E631B63F4F700884596 /* drank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AAB3E661B63F4F700884596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AAB3E681B63F4F700884596 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -80,9 +95,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11AC7ACD1B641899005BEEA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11AC7AD21B64189B005BEEA3 /* drank.app */,
+				11AC7AD41B64189B005BEEA3 /* drankTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		2AAB3E5A1B63F4F700884596 = {
 			isa = PBXGroup;
 			children = (
+				11AC7ACC1B641899005BEEA3 /* drank.xcodeproj */,
 				D7A3E8F71B6406CB00624E30 /* default~iphone.png */,
 				2AAB3E651B63F4F700884596 /* drank */,
 				2AAB3E7C1B63F4F800884596 /* drankTests */,
@@ -223,6 +248,12 @@
 			mainGroup = 2AAB3E5A1B63F4F700884596;
 			productRefGroup = 2AAB3E641B63F4F700884596 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 11AC7ACD1B641899005BEEA3 /* Products */;
+					ProjectRef = 11AC7ACC1B641899005BEEA3 /* drank.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2AAB3E621B63F4F700884596 /* drank */,
@@ -231,6 +262,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		11AC7AD21B64189B005BEEA3 /* drank.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = drank.app;
+			remoteRef = 11AC7AD11B64189B005BEEA3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		11AC7AD41B64189B005BEEA3 /* drankTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = drankTests.xctest;
+			remoteRef = 11AC7AD31B64189B005BEEA3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2AAB3E611B63F4F700884596 /* Resources */ = {
