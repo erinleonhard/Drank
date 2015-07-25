@@ -14,6 +14,8 @@
 		11D392B71B64203F003356DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11D392B61B64203F003356DA /* Images.xcassets */; };
 		11D392BA1B64203F003356DA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11D392B81B64203F003356DA /* LaunchScreen.xib */; };
 		11D392C61B64203F003356DA /* drankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D392C51B64203F003356DA /* drankTests.swift */; };
+		2AC88AAA1B6434F80009CF4F /* NewCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC88AA91B6434F80009CF4F /* NewCategoryViewController.swift */; };
+		2AC88AAC1B6438100009CF4F /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC88AAB1B6438100009CF4F /* CategoryCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		11D392BF1B64203F003356DA /* drankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = drankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11D392C41B64203F003356DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11D392C51B64203F003356DA /* drankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drankTests.swift; sourceTree = "<group>"; };
+		2AC88AA91B6434F80009CF4F /* NewCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCategoryViewController.swift; sourceTree = "<group>"; };
+		2AC88AAB1B6438100009CF4F /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +85,10 @@
 			children = (
 				11D392AD1B64203F003356DA /* AppDelegate.swift */,
 				11D392AF1B64203F003356DA /* FirstViewController.swift */,
+				2AC88AA91B6434F80009CF4F /* NewCategoryViewController.swift */,
 				11D392B11B64203F003356DA /* SecondViewController.swift */,
 				11D392B31B64203F003356DA /* Main.storyboard */,
+				2AC88AAB1B6438100009CF4F /* CategoryCollectionViewCell.swift */,
 				11D392B61B64203F003356DA /* Images.xcassets */,
 				11D392B81B64203F003356DA /* LaunchScreen.xib */,
 				11D392AB1B64203F003356DA /* Supporting Files */,
@@ -159,11 +165,13 @@
 		11D392A01B64203E003356DA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = Xtern;
 				TargetAttributes = {
 					11D392A71B64203F003356DA = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 9C9LVX9RE8;
 					};
 					11D392BE1B64203F003356DA = {
 						CreatedOnToolsVersion = 6.4;
@@ -216,6 +224,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				11D392B21B64203F003356DA /* SecondViewController.swift in Sources */,
+				2AC88AAC1B6438100009CF4F /* CategoryCollectionViewCell.swift in Sources */,
+				2AC88AAA1B6434F80009CF4F /* NewCategoryViewController.swift in Sources */,
 				11D392AE1B64203F003356DA /* AppDelegate.swift in Sources */,
 				11D392B01B64203F003356DA /* FirstViewController.swift in Sources */,
 			);
@@ -346,10 +356,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = drank/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -358,10 +371,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = drank/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -419,6 +435,7 @@
 				11D392CB1B64203F003356DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11D392CC1B64203F003356DA /* Build configuration list for PBXNativeTarget "drankTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +444,7 @@
 				11D392CE1B64203F003356DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
