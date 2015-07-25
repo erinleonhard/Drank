@@ -15,6 +15,8 @@
 		2AAB3E731B63F4F700884596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AAB3E711B63F4F700884596 /* LaunchScreen.storyboard */; };
 		2AAB3E7E1B63F4F800884596 /* drankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB3E7D1B63F4F800884596 /* drankTests.swift */; };
 		2AAB3E891B63F4F800884596 /* drankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB3E881B63F4F800884596 /* drankUITests.swift */; };
+		D7A3E8F61B64061000624E30 /* imageAssets in Resources */ = {isa = PBXBuildFile; fileRef = D7A3E8F51B64061000624E30 /* imageAssets */; };
+		D7A3E8F81B6406CB00624E30 /* default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D7A3E8F71B6406CB00624E30 /* default~iphone.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		2AAB3E841B63F4F800884596 /* drankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = drankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AAB3E881B63F4F800884596 /* drankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drankUITests.swift; sourceTree = "<group>"; };
 		2AAB3E8A1B63F4F800884596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7A3E8F51B64061000624E30 /* imageAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = imageAssets; sourceTree = "<group>"; };
+		D7A3E8F71B6406CB00624E30 /* default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "default~iphone.png"; path = "../../Full Version 1/NIOSH RWL/NIOSH RWL/AppImages/default~iphone.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		2AAB3E5A1B63F4F700884596 = {
 			isa = PBXGroup;
 			children = (
+				D7A3E8F71B6406CB00624E30 /* default~iphone.png */,
 				2AAB3E651B63F4F700884596 /* drank */,
 				2AAB3E7C1B63F4F800884596 /* drankTests */,
 				2AAB3E871B63F4F800884596 /* drankUITests */,
@@ -99,6 +104,7 @@
 		2AAB3E651B63F4F700884596 /* drank */ = {
 			isa = PBXGroup;
 			children = (
+				D7A3E8F51B64061000624E30 /* imageAssets */,
 				2AAB3E661B63F4F700884596 /* AppDelegate.swift */,
 				2AAB3E681B63F4F700884596 /* FirstViewController.swift */,
 				2AAB3E6A1B63F4F700884596 /* SecondViewController.swift */,
@@ -232,7 +238,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AAB3E731B63F4F700884596 /* LaunchScreen.storyboard in Resources */,
+				D7A3E8F61B64061000624E30 /* imageAssets in Resources */,
 				2AAB3E701B63F4F700884596 /* Assets.xcassets in Resources */,
+				D7A3E8F81B6406CB00624E30 /* default~iphone.png in Resources */,
 				2AAB3E6E1B63F4F700884596 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,7 +410,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-3";
 				INFOPLIST_FILE = drank/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ldstreet.drank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -413,7 +423,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-3";
 				INFOPLIST_FILE = drank/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ldstreet.drank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -487,6 +499,7 @@
 				2AAB3E8F1B63F4F800884596 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2AAB3E901B63F4F800884596 /* Build configuration list for PBXNativeTarget "drankTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +508,7 @@
 				2AAB3E921B63F4F800884596 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2AAB3E931B63F4F800884596 /* Build configuration list for PBXNativeTarget "drankUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +517,7 @@
 				2AAB3E951B63F4F800884596 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
