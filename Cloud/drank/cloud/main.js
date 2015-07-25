@@ -4,6 +4,7 @@
 Parse.Cloud.define("hello", function(request, response) {
   response.success("Hello world!");
 });
+<<<<<<< HEAD
 
 Parse.Cloud.define("TestInput", function(request, response){
 	var input = request.params.input;
@@ -50,3 +51,5 @@ Parse.Cloud.define("addADrink", function(request, response){
 	user.set(")
 }*/
 
+=======
+>>>>>>> f1597a4f205d1916cb244fb3c8270e8c3a346a1e
