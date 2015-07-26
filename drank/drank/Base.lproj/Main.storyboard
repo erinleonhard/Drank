@@ -235,18 +235,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Isx-0a-bNe">
-                                <rect key="frame" x="68" y="308" width="85" height="30"/>
-                                <state key="normal" title="Logout User">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="LogoutBtn:" destination="kpf-ws-jDT" eventType="touchUpInside" id="dnO-wu-1uc"/>
-                                    <segue destination="u4M-xt-ELL" kind="show" identifier="LogoutSeg" id="XMO-zx-IN0"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uZ-oV-G3G">
-                                <rect key="frame" x="85" y="45" width="56" height="21"/>
+                                <rect key="frame" x="97" y="45" width="56" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -282,25 +272,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MyName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4f7-Aa-ecN">
-                                <rect key="frame" x="119" y="92" width="141" height="21"/>
+                                <rect key="frame" x="119" y="92" width="164" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="M/F" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mb7-e0-qM6">
-                                <rect key="frame" x="119" y="128" width="141" height="21"/>
+                                <rect key="frame" x="119" y="128" width="164" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MyUsername" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxw-VA-lkV">
-                                <rect key="frame" x="119" y="198" width="126" height="21"/>
+                                <rect key="frame" x="119" y="198" width="164" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tc4-Zx-BNh" userLabel="Change Password">
-                                <rect key="frame" x="119" y="261" width="112" height="30"/>
+                                <rect key="frame" x="119" y="261" width="164" height="30"/>
                                 <state key="normal" title="Reset Password">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -315,11 +305,44 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MyEmail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rez-ai-B7t">
-                                <rect key="frame" x="119" y="232" width="126" height="21"/>
+                                <rect key="frame" x="119" y="232" width="164" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ijy-4i-SRj">
+                                <rect key="frame" x="119" y="161" width="112" height="30"/>
+                                <state key="normal" title="100 lbs">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="UpdateWeightBtn:" destination="kpf-ws-jDT" eventType="touchUpInside" id="gk9-KH-IwQ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yxs-Z7-uj1">
+                                <rect key="frame" x="119" y="160" width="126" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X67-31-7V9">
+                                <rect key="frame" x="253" y="161" width="30" height="30"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ApproveWeightChangeBtn:" destination="kpf-ws-jDT" eventType="touchUpInside" id="7LD-fH-tdS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Isx-0a-bNe">
+                                <rect key="frame" x="83" y="308" width="85" height="30"/>
+                                <state key="normal" title="Logout User">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="LogoutBtn:" destination="kpf-ws-jDT" eventType="touchUpInside" id="dnO-wu-1uc"/>
+                                    <segue destination="u4M-xt-ELL" kind="show" identifier="LogoutSeg" id="XMO-zx-IN0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -328,9 +351,12 @@
                     <connections>
                         <outlet property="EmailTextField" destination="rez-ai-B7t" id="kzJ-f5-CKy"/>
                         <outlet property="NameTextField" destination="4f7-Aa-ecN" id="UYg-59-eCz"/>
+                        <outlet property="OKBtn" destination="X67-31-7V9" id="H8h-XK-SI9"/>
                         <outlet property="PasswordText" destination="tc4-Zx-BNh" id="NQG-PW-Zqa"/>
                         <outlet property="SexTextField" destination="mb7-e0-qM6" id="YN2-dt-wsu"/>
                         <outlet property="UsernameTextField" destination="bxw-VA-lkV" id="bos-WT-E2F"/>
+                        <outlet property="WeightBtn" destination="Ijy-4i-SRj" id="b4Y-d8-sIk"/>
+                        <outlet property="WeightInputTextField" destination="yxs-Z7-uj1" id="kHq-yJ-a2L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VKK-6m-ovc" sceneMemberID="firstResponder"/>
@@ -534,7 +560,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AnP-UI-3El">
-                                <rect key="frame" x="143" y="450" width="85" height="30"/>
+                                <rect key="frame" x="164" y="450" width="85" height="30"/>
                                 <state key="normal" title="Sign Me Up!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -572,7 +598,7 @@
                         <outlet property="PasswordTextField" destination="8mh-X3-JXU" id="K1l-kO-wPa"/>
                         <outlet property="UsernameTextField" destination="bXF-7P-XRL" id="iKP-mE-ddG"/>
                         <outlet property="WeightTextField" destination="mL9-jM-osq" id="gB5-sR-ENJ"/>
-                        <segue destination="49e-Tb-3d3" kind="show" id="Iho-gG-nh2"/>
+                        <segue destination="49e-Tb-3d3" kind="show" identifier="SignUpSeg" id="Iho-gG-nh2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qac-GA-tVK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -992,4 +1018,5 @@
     <inferredMetricsTieBreakers>
         <segue reference="Iho-gG-nh2"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.55739030934343436" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>

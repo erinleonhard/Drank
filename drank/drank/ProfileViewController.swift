@@ -16,12 +16,15 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var EmailTextField: UILabel!
     @IBOutlet weak var PasswordText: UIButton!
     @IBOutlet weak var OKBtn: UIButton!
+    @IBOutlet weak var WeightBtn: UIButton!
+    @IBOutlet weak var WeightInputTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         var currentUser = PFUser.currentUser()
+        WeightInputTextField.hidden = true;
+        OKBtn.hidden = true;
         
     }
     
@@ -36,6 +39,22 @@ class ProfileViewController: UIViewController {
             PasswordText.setTitle("Check your email.", forState: .Normal)
         }
     }
+    
+    @IBAction func UpdateWeightBtn(sender: AnyObject) {
+        WeightBtn.hidden = true
+        WeightInputTextField.hidden = false
+        // set WeightInputTextField.text to something
+        OKBtn.hidden = false
+    }
+    
+    @IBAction func ApproveWeightChangeBtn(sender: AnyObject) {
+        // send udpated weight to database
+        WeightBtn.hidden = false;
+        WeightBtn.setTitle(WeightInputTextField.text, forState: .Normal)
+        WeightInputTextField.hidden = true;
+        OKBtn.hidden = true;
+    }
+    
     
     @IBAction func LogoutBtn(sender: AnyObject) {
         PFUser.logOut()
