@@ -33,21 +33,21 @@ class SignUpViewController: UIViewController {
     @IBAction func SignUpBtn(sender: AnyObject) {
         var user = PFUser()
             
-        if (self.UsernameTextField != nil &&
-            self.PasswordTextField != nil &&
-            self.EmailTextField != nil &&
-            self.NameTextField != nil &&
-            self.WeightTextField != nil)
+        if (self.UsernameTextField.text != nil &&
+            self.PasswordTextField.text != nil &&
+            self.EmailTextField.text != nil &&
+            self.NameTextField.text != nil &&
+            self.WeightTextField.text != nil)
         {
-            self.ErrorMessagesLabel.text = "Must complete all fields."
-            return;
-        } else {
             user.username = self.UsernameTextField.text
             user.password = self.PasswordTextField.text
             user.email = self.EmailTextField.text
             user["name"] = self.NameTextField.text
             user["isMale"] = self.MaleSelectedBtn.selected
             user["weight"] = self.WeightTextField.text.toInt()
+        } else {
+            self.ErrorMessagesLabel.text = "Must complete all fields."
+            return;
         }
         
         user.signUpInBackgroundWithBlock {

@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Parse
 
 class LoginViewController: UIViewController {
     @IBOutlet weak var UsernameTextField: UITextField!
     @IBOutlet weak var PasswordTextField: UITextField!
+    @IBOutlet weak var ErrorLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +26,22 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func LoginBtn(sender: AnyObject) {
+        if (self.UsernameTextField.text != nil &&
+            self.PasswordTextField.text != nil)
+        {
+            PFUser.logInWithUsernameInBackground(self.UsernameTextField.text, password: self.PasswordTextField.text) {
+                (user: PFUser?, error: NSError?) -> Void in
+                
+                if user != nil {
+                    self.performSegueWithIdentifier("LoginSeg", sender: self)
+                } else {
+                    let errorString = error!.userInfo?["error"] as? NSString
+                    self.ErrorLabel.text = errorString!.capitalizedString
+                }
+            }
+        } else {
+            self.ErrorLabel.text = "Must complete all fields."
+        }
         
     }
 }

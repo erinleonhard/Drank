@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import Parse
 
 class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        var currentUser = PFUser.currentUser()
+        if currentUser != nil {
+            self.performSegueWithIdentifier("WelcomeSeg", sender: self)
+        }
         
     }
     
