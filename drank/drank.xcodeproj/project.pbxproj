@@ -10,6 +10,8 @@
 		11D392AE1B64203F003356DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D392AD1B64203F003356DA /* AppDelegate.swift */; };
 		11D392B01B64203F003356DA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D392AF1B64203F003356DA /* FirstViewController.swift */; };
 		11D392B21B64203F003356DA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D392B11B64203F003356DA /* SecondViewController.swift */; };
+		2AC88AAA1B6434F80009CF4F /* NewCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC88AA91B6434F80009CF4F /* NewCategoryViewController.swift */; };
+		2AC88AAC1B6438100009CF4F /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC88AAB1B6438100009CF4F /* CategoryCollectionViewCell.swift */; };
 		11D392B51B64203F003356DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D392B31B64203F003356DA /* Main.storyboard */; };
 		11D392B71B64203F003356DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11D392B61B64203F003356DA /* Images.xcassets */; };
 		11D392BA1B64203F003356DA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11D392B81B64203F003356DA /* LaunchScreen.xib */; };
@@ -77,6 +79,8 @@
 		11D393691B64366A003356DA /* drank-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "drank-Bridging-Header.h"; sourceTree = "<group>"; };
 		11D3936C1B64386B003356DA /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		11D3936E1B643876003356DA /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		2AC88AA91B6434F80009CF4F /* NewCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCategoryViewController.swift; sourceTree = "<group>"; };
+		2AC88AAB1B6438100009CF4F /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,8 +162,10 @@
 			children = (
 				11D392AD1B64203F003356DA /* AppDelegate.swift */,
 				11D392AF1B64203F003356DA /* FirstViewController.swift */,
+				2AC88AA91B6434F80009CF4F /* NewCategoryViewController.swift */,
 				11D392B11B64203F003356DA /* SecondViewController.swift */,
 				11D392B31B64203F003356DA /* Main.storyboard */,
+				2AC88AAB1B6438100009CF4F /* CategoryCollectionViewCell.swift */,
 				11D392B61B64203F003356DA /* Images.xcassets */,
 				11D392B81B64203F003356DA /* LaunchScreen.xib */,
 				11D392AB1B64203F003356DA /* Supporting Files */,
@@ -237,11 +243,13 @@
 		11D392A01B64203E003356DA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = Xtern;
 				TargetAttributes = {
 					11D392A71B64203F003356DA = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 9C9LVX9RE8;
 					};
 					11D392BE1B64203F003356DA = {
 						CreatedOnToolsVersion = 6.4;
@@ -294,6 +302,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				11D392B21B64203F003356DA /* SecondViewController.swift in Sources */,
+				2AC88AAC1B6438100009CF4F /* CategoryCollectionViewCell.swift in Sources */,
+				2AC88AAA1B6434F80009CF4F /* NewCategoryViewController.swift in Sources */,
 				11D392AE1B64203F003356DA /* AppDelegate.swift in Sources */,
 				11D392B01B64203F003356DA /* FirstViewController.swift in Sources */,
 			);
@@ -430,12 +440,15 @@
 					"/Users/erinleonhard/Dropbox/Xtern/Drank/drank/parse-library-1.7.5",
 					"$(PROJECT_DIR)/parse-library-1.7.5",
 				);
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = drank/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "drank/drank-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -450,11 +463,14 @@
 					"/Users/erinleonhard/Dropbox/Xtern/Drank/drank/parse-library-1.7.5",
 					"$(PROJECT_DIR)/parse-library-1.7.5",
 				);
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = drank/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "drank/drank-Bridging-Header.h";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
