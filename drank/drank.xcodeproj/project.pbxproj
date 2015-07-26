@@ -39,6 +39,8 @@
 		11D393771B646DF1003356DA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D393761B646DF1003356DA /* SignUpViewController.swift */; };
 		2AC88AAA1B6434F80009CF4F /* NewCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC88AA91B6434F80009CF4F /* NewCategoryViewController.swift */; };
 		2AC88AAC1B6438100009CF4F /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC88AAB1B6438100009CF4F /* CategoryCollectionViewCell.swift */; };
+		D7A3E92A1B64501300624E30 /* imageAssets in Resources */ = {isa = PBXBuildFile; fileRef = D7A3E9291B64501300624E30 /* imageAssets */; };
+		D7A3E92C1B6450F700624E30 /* SplashScreens in Resources */ = {isa = PBXBuildFile; fileRef = D7A3E92B1B6450F700624E30 /* SplashScreens */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		11D393761B646DF1003356DA /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		2AC88AA91B6434F80009CF4F /* NewCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCategoryViewController.swift; sourceTree = "<group>"; };
 		2AC88AAB1B6438100009CF4F /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		D7A3E9291B64501300624E30 /* imageAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = imageAssets; path = ../../imageAssets; sourceTree = "<group>"; };
+		D7A3E92B1B6450F700624E30 /* SplashScreens */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SplashScreens; path = ../../SplashScreens; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +193,8 @@
 		11D392AB1B64203F003356DA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D7A3E92B1B6450F700624E30 /* SplashScreens */,
+				D7A3E9291B64501300624E30 /* imageAssets */,
 				11D392AC1B64203F003356DA /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -292,7 +298,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7A3E92C1B6450F700624E30 /* SplashScreens in Resources */,
 				11D392B51B64203F003356DA /* Main.storyboard in Resources */,
+				D7A3E92A1B64501300624E30 /* imageAssets in Resources */,
 				11D392BA1B64203F003356DA /* LaunchScreen.xib in Resources */,
 				11D392B71B64203F003356DA /* Images.xcassets in Resources */,
 			);
@@ -457,6 +465,7 @@
 					"/Users/erinleonhard/Dropbox/Xtern/Drank/drank/parse-library-1.7.5",
 					"$(PROJECT_DIR)/parse-library-1.7.5",
 				);
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = drank/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -480,6 +489,7 @@
 					"/Users/erinleonhard/Dropbox/Xtern/Drank/drank/parse-library-1.7.5",
 					"$(PROJECT_DIR)/parse-library-1.7.5",
 				);
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = drank/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
