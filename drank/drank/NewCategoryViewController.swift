@@ -19,34 +19,38 @@ class NewCategoryViewController: UIViewController{
         performSegueWithIdentifier("toDrinks", sender: sender)
     }
     @IBAction func getFriendDrinks(sender: AnyObject) {
-        category = "frienddrinks"
+        category = "Whiskey"
         performSegueWithIdentifier("toDrinks", sender: sender)
     }
     @IBAction func getRecentDrinks(sender: AnyObject) {
-        category = "recentdrinks"
+        category = "Vodka"
         performSegueWithIdentifier("toDrinks", sender: sender)
     }
     @IBAction func getBeers(sender: AnyObject) {
-        category = "beers"
+        category = "Beer"
         performSegueWithIdentifier("toDrinks", sender: sender)
     }
     @IBAction func getWines(sender: AnyObject) {
-        category = "wines"
+        category = "Wine"
         performSegueWithIdentifier("toDrinks", sender: sender)
     }
     @IBAction func getLiquors(sender: AnyObject) {
-        category = "liquors"
+        category = "Hard Alcohol"
         performSegueWithIdentifier("toDrinks", sender: sender)
     }
     @IBAction func getMixedDrinks(sender: AnyObject) {
-        category = "mixeddrinks"
+        category = "Mixed"
         performSegueWithIdentifier("toDrinks", sender: sender)
     }
-
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if segue.identifier == "toDrinks"{
+
+
+            //print(drinks[0].name)
             let vc = segue.destinationViewController as! DrinksViewController
             vc.currentCategory = category
+            //vc.drinks = drinks
             //vc.colorString = colorLabel.text
         }
     }

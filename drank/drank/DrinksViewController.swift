@@ -7,32 +7,44 @@
 //
 
 import UIKit
+import Parse
 
 class DrinksViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var currentCategory : String = ""
+    var currentCategory : String = "Hard Alcohol"
     @IBOutlet var drinkLabel: UITextField!
     @IBOutlet var tableView: UITableView!
-    var drinks: [String] = ["We", "Heart", "Swift"]
+    var drinks: [drinkModel] = []
+    
+    func appDrinks(drink : drinkModel) {
+        self.drinks.append(drink)
+    }
+    override func viewWillAppear(animated: Bool) {
+        //var drinkss : [drinkModel] = []
+        PFCloud.callFunctionInBackground("grabDrinkByType", withParameters: ["DrinkType":currentCategory]) {
+            (response: AnyObject?, error: NSError?) -> Void in
+            print (response)
+            //var drinksss : [drinkModel] = []
+            let array = response as! NSArray
+            for pfobj in array {
+                let obj = pfobj as! PFObject
+                let name = obj.valueForKey("Name") as! String //dataForKey("Name")!.description
+                let percent = obj.valueForKey("percentAlcohol") as! Double
+                let cals = obj.valueForKey("calories") as! Int
+                print("\(name) + \(percent) + \(cals)")
+                let drink : drinkModel = drinkModel(name: name, percentAlcohol: percent, calories: cals)
+                self.appDrinks(drink)
+                print("pass")
+                self.tableView.reloadData()
+            }
+            //print(drinkss[0].name)
+            //self.drinks = drinks
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        switch currentCategory {
-        case "favorites":
-            print("Hello")
-        case "mydrinks":
-            print("Hello")
-        case "recentdrinks":
-            print("Hello")
-        case "beers":
-            print("Hello")
-        case "wines":
-            print("Hello")
-        case "liquors":
-            print("Hello")
-        case "mixeddrinks":
-            print("Hello")
-        default:
-            print("Hello")
-        }
+        //print(drinks[0].name)
+        
+        
         // Do any additional setup after loading the view.
     }
     
@@ -49,7 +61,11 @@ class DrinksViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell : DrinkTableViewCell = (tableView.dequeueReusableCellWithIdentifier("DrinkTableViewCell") as! DrinkTableViewCell)
         print (self.drinks[indexPath.row])
-        cell.setDrinkName(self.drinks[indexPath.row])
+        cell.drinkNameLabel.text = self.drinks[indexPath.row].name
+        cell.percentAlcLabel.text = "\(self.drinks[indexPath.row].percentAlcohol)% Alc"
+        cell.calLabel.text = "\(self.drinks[indexPath.row].calories) Cals"
+        
+        //cell.setDrinkName(self.drinks[indexPath.row])
         
         return cell
         

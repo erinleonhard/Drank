@@ -19,4 +19,9 @@ class drinkModel {
         self.percentAlcohol = percentAlcohol;
         self.calories = calories;
     }
+    
+//    func populateDrink(drink : PFObject) {
+//        self.name = drink.objectForKey("Name")
+//        self.percentAlcohol = drink.objectForKey(<#T##key: String##String#>)
+//    }
 }
