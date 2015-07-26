@@ -8,48 +8,58 @@
 
 import UIKit
 
-class NewCategoryViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+class NewCategoryViewController: UIViewController{
+    var category : String = ""
+    @IBAction func getFavoriteDrinks(sender: AnyObject){
+        category = "favorites"
+        performSegueWithIdentifier("toDrinks", sender: sender)
+    }
+    @IBAction func getMyDrinks(sender: AnyObject) {
+        category = "mydrinks"
+        performSegueWithIdentifier("toDrinks", sender: sender)
+    }
+    @IBAction func getFriendDrinks(sender: AnyObject) {
+        category = "frienddrinks"
+        performSegueWithIdentifier("toDrinks", sender: sender)
+    }
+    @IBAction func getRecentDrinks(sender: AnyObject) {
+        category = "recentdrinks"
+        performSegueWithIdentifier("toDrinks", sender: sender)
+    }
+    @IBAction func getBeers(sender: AnyObject) {
+        category = "beers"
+        performSegueWithIdentifier("toDrinks", sender: sender)
+    }
+    @IBAction func getWines(sender: AnyObject) {
+        category = "wines"
+        performSegueWithIdentifier("toDrinks", sender: sender)
+    }
+    @IBAction func getLiquors(sender: AnyObject) {
+        category = "liquors"
+        performSegueWithIdentifier("toDrinks", sender: sender)
+    }
+    @IBAction func getMixedDrinks(sender: AnyObject) {
+        category = "mixeddrinks"
+        performSegueWithIdentifier("toDrinks", sender: sender)
+    }
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if segue.identifier == "toDrinks"{
+            let vc = segue.destinationViewController as! DrinksViewController
+            vc.currentCategory = category
+            //vc.colorString = colorLabel.text
+        }
+    }
     
-    @IBOutlet var collectionView: UICollectionView?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
-        layout.itemSize = CGSize(width: 150, height: 150)
-        collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
-        collectionView!.dataSource = self
-        collectionView!.delegate = self
-        collectionView!.registerClass(CategoryCollectionViewCell.self, forCellWithReuseIdentifier: "favoriteCell")
-        collectionView!.backgroundColor = UIColor.lightGrayColor()
-        self.view.addSubview(collectionView!)
-    }
-    
-    
-    
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 1
-    }
-    
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 9
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("favoriteCell", forIndexPath: indexPath) as! CategoryCollectionViewCell
-        cell.backgroundColor = UIColor.whiteColor()
-        //cell.button.setTitle("Section", forState: .Normal)
-        
-        //cell.textLabel?.text = "\(indexPath.section):\(indexPath.row)"
-        //cell.imageView?.image = UIImage(named: "circle")
-        return cell
-    }
-    
     
 }
 
