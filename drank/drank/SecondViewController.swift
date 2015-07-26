@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Parse
 
 class SecondViewController: UIViewController {
 
@@ -21,10 +20,6 @@ class SecondViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    @IBAction func LogoutBtn(sender: AnyObject) {
-        PFUser.logOut()
-        var currentUser = PFUser.currentUser() // this will now be nil
-    }
+    
 }
 
