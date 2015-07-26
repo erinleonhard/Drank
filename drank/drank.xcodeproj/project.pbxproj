@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		113C0C191B64FECD00529136 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C0C181B64FECD00529136 /* ProfileViewController.swift */; };
 		11D392AE1B64203F003356DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D392AD1B64203F003356DA /* AppDelegate.swift */; };
 		11D392B01B64203F003356DA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D392AF1B64203F003356DA /* FirstViewController.swift */; };
 		11D392B21B64203F003356DA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D392B11B64203F003356DA /* SecondViewController.swift */; };
@@ -59,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		113C0C181B64FECD00529136 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		11D392A81B64203F003356DA /* drank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11D392AC1B64203F003356DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11D392AD1B64203F003356DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				11D393741B646D74003356DA /* LoginViewController.swift */,
 				11D393761B646DF1003356DA /* SignUpViewController.swift */,
 				2A68B3111B65143800744B88 /* NewCategoryViewController.swift */,
+				113C0C181B64FECD00529136 /* ProfileViewController.swift */,
 			);
 			path = drank;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				2AC88AAE1B64520F0009CF4F /* DrinksViewController.swift in Sources */,
 				11D392AE1B64203F003356DA /* AppDelegate.swift in Sources */,
 				11D393771B646DF1003356DA /* SignUpViewController.swift in Sources */,
+				113C0C191B64FECD00529136 /* ProfileViewController.swift in Sources */,
 				11D392B01B64203F003356DA /* FirstViewController.swift in Sources */,
 				11D393731B64563E003356DA /* WelcomeViewController.swift in Sources */,
 			);

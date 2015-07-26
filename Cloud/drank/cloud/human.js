@@ -1,6 +1,12 @@
-var human = Parse.Object.extend("User", {
+var User = Parse.Object.extend("User", {
 	
-//drinkHistory
+	
+	
+	testLoad: function(){
+		return "Hello world, welcome to humans";
+	},
+
+	//drinkHistory
 	getBAC: function (){
 		if(this.drinkHistory.length === 0)
 			return 0;
@@ -11,7 +17,7 @@ var human = Parse.Object.extend("User", {
 			return bac;
 		this.stashPastNightOut();
 		return 0;
-	}
+	},
 
 
 	addDrink: function(drinkID, strength, quantity){
@@ -26,9 +32,7 @@ var human = Parse.Object.extend("User", {
 			bac: startingBAC + additonalBAC
 		}
 		this.drinkHistory.push(bac);
-	}
-
-
+	},
 
 	stashPastNightOut: function(){
 		var past_Nights = Parse.Object.extend("past_Nights");
@@ -42,11 +46,11 @@ var human = Parse.Object.extend("User", {
 		past_Nights.save(null,{
 			success: function(past_Nights){
 				response.success(past_Nights);
-			}
+			},
 			error: function(error){
 				response.error(error);
 			}
-		})
+		});
 	}
 
 });
