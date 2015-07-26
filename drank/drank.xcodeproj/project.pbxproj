@@ -38,6 +38,7 @@
 		11D393731B64563E003356DA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D393721B64563E003356DA /* WelcomeViewController.swift */; };
 		11D393751B646D74003356DA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D393741B646D74003356DA /* LoginViewController.swift */; };
 		11D393771B646DF1003356DA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D393761B646DF1003356DA /* SignUpViewController.swift */; };
+		2A68B3151B652C0700744B88 /* NewCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A68B3141B652C0700744B88 /* NewCategoryViewController.swift */; };
 		2A9719631B649A7700B45672 /* DrinkLogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9719621B649A7700B45672 /* DrinkLogTableViewCell.swift */; };
 		2A9719671B649C6600B45672 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9719661B649C6600B45672 /* HistoryViewController.swift */; };
 		2AC88AAE1B64520F0009CF4F /* DrinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC88AAD1B64520F0009CF4F /* DrinksViewController.swift */; };
@@ -96,6 +97,7 @@
 		11D393721B64563E003356DA /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		11D393741B646D74003356DA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		11D393761B646DF1003356DA /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		2A68B3141B652C0700744B88 /* NewCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewCategoryViewController.swift; path = drank/NewCategoryViewController.swift; sourceTree = "<group>"; };
 		2A9719621B649A7700B45672 /* DrinkLogTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkLogTableViewCell.swift; sourceTree = "<group>"; };
 		2A9719661B649C6600B45672 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = ../HistoryViewController.swift; sourceTree = "<group>"; };
 		2AC88AA91B6434F80009CF4F /* NewCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCategoryViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 		11D3929F1B64203E003356DA = {
 			isa = PBXGroup;
 			children = (
+				2A68B3141B652C0700744B88 /* NewCategoryViewController.swift */,
 				11D3936E1B643876003356DA /* Social.framework */,
 				11D3936C1B64386B003356DA /* Accounts.framework */,
 				11D3935D1B6435A4003356DA /* Bolts.framework */,
@@ -340,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A68B3151B652C0700744B88 /* NewCategoryViewController.swift in Sources */,
 				2AC88AB01B645C260009CF4F /* DrinkTableViewCell.swift in Sources */,
 				11D392B21B64203F003356DA /* SecondViewController.swift in Sources */,
 				11D393711B644DC3003356DA /* TabMenuController.swift in Sources */,
