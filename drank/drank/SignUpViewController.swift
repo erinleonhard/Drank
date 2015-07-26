@@ -31,26 +31,33 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func SignUpBtn(sender: AnyObject) {
-        // validate credentials
-        
         var user = PFUser()
-        user.username = self.UsernameTextField.text
-        user.password = self.PasswordTextField.text
-        user.email = self.EmailTextField.text
-        user["name"] = self.NameTextField.text
-        user["isMale"] = self.MaleSelectedBtn.selected
-        user["weight"] = self.WeightTextField.text.toInt()
-        
-        print(user["weight"]);
+            
+        if (self.UsernameTextField != nil &&
+            self.PasswordTextField != nil &&
+            self.EmailTextField != nil &&
+            self.NameTextField != nil &&
+            self.WeightTextField != nil)
+        {
+            self.ErrorMessagesLabel.text = "Must complete all fields."
+            return;
+        } else {
+            user.username = self.UsernameTextField.text
+            user.password = self.PasswordTextField.text
+            user.email = self.EmailTextField.text
+            user["name"] = self.NameTextField.text
+            user["isMale"] = self.MaleSelectedBtn.selected
+            user["weight"] = self.WeightTextField.text.toInt()
+        }
         
         user.signUpInBackgroundWithBlock {
             (succeeded: Bool, error: NSError?) -> Void in
-            if let error = error {
-                let errorString = error.userInfo?["error"] as? NSString
+            
+            if (error != nil) {
+                let errorString = error!.userInfo?["error"] as? NSString
                 self.ErrorMessagesLabel.text = errorString!.capitalizedString
-                
             } else {
-                self.performSegueWithIdentifier("mySegue", sender:sender)
+                self.performSegueWithIdentifier("SignUpSeg", sender: self)
             }
         }
 
