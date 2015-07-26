@@ -1,4 +1,4 @@
-
+require('cloud/human.js');
 // Use Parse.Cloud.define to define as many cloud functions as you want.
 // For example:
 Parse.Cloud.define("hello", function(request, response) {
@@ -22,8 +22,23 @@ Parse.Cloud.define("addADrink", function(request, response){
 		response.error("failed - no current User" + currentUser);
 		return;
 	}
-	var currentUser = Parse.User.current().get('email');
-	var currentBAC = _grabCurrentBAC(currentUser);
+	var email = Parse.User.current().get('email');
+
+	var User = Parse.Object.extend("User");
+	var query = new Parse.Query(User);
+	query.get('DelPZfGTtw',{
+		success: function(result){
+			response.success(result.testLoad());
+		},
+		error: function(object, error){
+			response.error("errored out " + object +" " + error);
+		}
+	});
+	//var guy = query.equalTo("email", email);
+	//response.success(Parse.User.current().);
+	//response.success(guy);
+
+	//var currentBAC = _grabCurrentBAC(currentUser);
 /*	var drinkID = request.params.drinkID;
 	var strength = request.params.strength;
 	var quantity = request.params.quantity;*/
@@ -32,7 +47,7 @@ Parse.Cloud.define("addADrink", function(request, response){
 	//quantity gets multipled by strength
 
 	//var additonalBAC = _newBAC(quantity, isMale, weight);
-	response.success(currentBAC);
+	//response.success(currentBAC);
 /*	var drink_historyTable = Parse.Object.extend("Drink_History");
 	var userTable = Parse.Object.extend("User");
 	var userQuery = new Parse.Query(userTable);
@@ -96,40 +111,7 @@ Parse.Cloud.define("grabDrinksFromTonight", function(request, response){
 
 
 	// bools ((new Date)-myDate) < ONE_HOUR
-
 });
-
-var _grabCurrentBAC = function(email){
-	var drink_historyTable = Parse.Object.extend("Drink_History");
-	var userTable = Parse.Object.extend("User");
-	var userQuery = new Parse.Query(userTable);
-	userQuery.equalTo("email", email);
-	var historyQuery = new Parse.Query(drink_historyTable);
-	historyQuery.matchesQuery("UserID", userQuery);
-	historyQuery.descending("updatedAt");
-	var returnValue;
-	 historyQuery.find({
-		success: function(results){
-			response.success(results);
-			if(results.length === 0){
-				return 0;
-			}
-			var bac = results[0].get('bac');
-			//3600000 mil seconds = 1 hour
-			var dT = ((new Date) - results[0].get('updatedAt'))/(3600000);
-			bac -= (0.015 * dT);
-			returnValue= bac > 0 ? bac : 0;
-			return returnValue;
-		},
-		error: function(response){
-			//response.error("work");
-			returnValue -1;
-		}
-	});
-	 return returnValue;
-}
-
-
 
 var _newBAC = function(quantity, isMale, weight){
 	var bac = (quantity * 105.5)/weight;
