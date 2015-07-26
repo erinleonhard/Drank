@@ -9,18 +9,19 @@ var User = Parse.Object.extend("User", {
 	//drinkHistory
 	getBAC: function (){
 		//return this.get("drinkHistory");
-		if(typeof(array) ===Array || this.get("drinkHistory").length === 0)
+		if(!Array.isArray(this.get("drinkHistory")) || this.get("drinkHistory").length === 1)
 			return 0;
 		var lastDrink = this.get("drinkHistory")[this.get("drinkHistory").length -1];
 		var dT = ((new Date) - lastDrink.timeStamp)/3600000;
 		bac = lastDrink.bac - (0.015 * dT);
-		if(bac > 0)
+		if(bac > 0 )
 			return bac;
 		this.stashPastNightOut();
 		return 0;
 	},
 
-
+//{"drinkID":"f0VDg2Y3jo", "strength": "1.00", "quantity": "0.5" }
+// quantiy = % Alc * number of drinks EX: shot of KC = 0.5 * 2
 	addDrink: function(drinkID, strength, quantity){
 		var startingBAC = this.getBAC();
 		var quantityAdj = quantity * strength; 
@@ -30,19 +31,18 @@ var User = Parse.Object.extend("User", {
 			strength: strength,
 			quantity: quantity,
 			timeStamp: new Date,
-			bac: startingBAC + additonalBAC
+			bac:  (isNaN(parseInt(startingBAC)) ? 0 : startingBAC) + (isNaN(parseInt(additonalBAC)) ? 0 : additonalBAC)
 		}
 		var array = this.get("drinkHistory")
-		if(typeof(array) ===Array)
+		if(Array.isArray(array))
 			array.push(drink);
 		else{
 			array = [];
 			array[0] = drink;
 		}
 		this.set("drinkHistory", array);
-		return JSON.stringify(array);
-
-		//return this.get("isMale");
+		return JSON.stringify("1 " + array);
+		//return JSON.stringify({drinkID: drinkID, strength: strength,quantity: quantity, additonalBAC: additonalBAC});
 	},
 
 	stashPastNightOut: function(){
@@ -68,7 +68,7 @@ var User = Parse.Object.extend("User", {
 
 
 var _newBAC = function(quantity, isMale, weight){
-	var bac = (quantity * 105.5)/weight;
+	var bac = (quantity * 10.55)/weight;
 	var genderConstant = isMale ? 0.68 : 0.55;
 	return bac * genderConstant;
 }
