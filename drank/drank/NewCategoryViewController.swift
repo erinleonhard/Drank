@@ -10,7 +10,7 @@ import UIKit
 
 class NewCategoryViewController: UIViewController{
     var category : String = ""
-    @IBAction func getFavoriteDrinks(sender: AnyObject){
+    @IBAction func getFavoriteDrinks(sender: UIButton){
         category = "favorites"
         performSegueWithIdentifier("toDrinks", sender: sender)
     }
@@ -42,7 +42,7 @@ class NewCategoryViewController: UIViewController{
         category = "mixeddrinks"
         performSegueWithIdentifier("toDrinks", sender: sender)
     }
-
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if segue.identifier == "toDrinks"{
             let vc = segue.destinationViewController as! DrinksViewController
