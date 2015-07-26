@@ -11,7 +11,6 @@
         <mutableArray key="Helvetica.ttc">
             <string>Helvetica</string>
             <string>Helvetica</string>
-            <string>Helvetica</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -58,6 +57,124 @@
             </objects>
             <point key="canvasLocation" x="14" y="-712"/>
         </scene>
+        <!--History Detail View Controller-->
+        <scene sceneID="nV0-G5-R7c">
+            <objects>
+                <viewController id="26Y-1i-tsW" customClass="HistoryDetailViewController" customModule="drank" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xXc-49-eQ5"/>
+                        <viewControllerLayoutGuide type="bottom" id="RE7-Fl-Nc3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AoQ-wE-suF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="DrinkName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9h-Mv-8RJ">
+                                <rect key="frame" x="219" y="28" width="163" height="34"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="il0-cs-zhF">
+                                <rect key="frame" x="279" y="78" width="0.0" height="0.0"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="100 Calories" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKL-KS-2yC">
+                                <rect key="frame" x="253" y="91" width="95" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Your drink was:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N72-Hx-qnG">
+                                <rect key="frame" x="242" y="154" width="117" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="8.0% Alcohol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQP-1F-UhQ">
+                                <rect key="frame" x="251" y="67" width="99" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ic0-hw-BfH">
+                                <rect key="frame" x="225" y="183" width="150" height="20"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZfJ-u2-lAN">
+                                <rect key="frame" x="225" y="296" width="150" height="20"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0.08 % Est. B.A.C." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Iu-ze-kie">
+                                <rect key="frame" x="232" y="114" width="136" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Your drink contained:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFz-CH-n9T">
+                                <rect key="frame" x="225" y="240" width="163" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gbb-jX-csy">
+                                <rect key="frame" x="175" y="452" width="250" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Edit"/>
+                                <connections>
+                                    <action selector="addDrink:" destination="GhO-HF-qU4" eventType="touchUpInside" id="OEz-8l-cLc"/>
+                                    <action selector="editDrink:" destination="26Y-1i-tsW" eventType="touchUpInside" id="ELl-5s-JaL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wKL-KS-2yC" firstAttribute="centerX" secondItem="AoQ-wE-suF" secondAttribute="centerX" id="Gdb-eJ-PZG"/>
+                            <constraint firstItem="f9h-Mv-8RJ" firstAttribute="top" secondItem="xXc-49-eQ5" secondAttribute="bottom" id="HbZ-fn-7nW"/>
+                            <constraint firstItem="RE7-Fl-Nc3" firstAttribute="top" secondItem="Gbb-jX-csy" secondAttribute="bottom" constant="8" id="HfX-0m-8wN"/>
+                            <constraint firstItem="f9h-Mv-8RJ" firstAttribute="centerX" secondItem="AoQ-wE-suF" secondAttribute="centerX" id="Mon-72-L7Y"/>
+                            <constraint firstItem="N72-Hx-qnG" firstAttribute="centerX" secondItem="AoQ-wE-suF" secondAttribute="centerX" id="ZeA-YA-9Sc"/>
+                            <constraint firstItem="ic0-hw-BfH" firstAttribute="centerX" secondItem="AoQ-wE-suF" secondAttribute="centerX" id="bRN-fZ-g0H"/>
+                            <constraint firstItem="Gbb-jX-csy" firstAttribute="centerX" secondItem="AoQ-wE-suF" secondAttribute="centerX" id="bhZ-ha-z6O"/>
+                            <constraint firstItem="ZfJ-u2-lAN" firstAttribute="centerX" secondItem="AoQ-wE-suF" secondAttribute="centerX" id="bho-A4-M13"/>
+                            <constraint firstItem="Gbb-jX-csy" firstAttribute="width" secondItem="AoQ-wE-suF" secondAttribute="width" id="k3t-oX-Ktc"/>
+                            <constraint firstItem="0Iu-ze-kie" firstAttribute="centerX" secondItem="AoQ-wE-suF" secondAttribute="centerX" id="nQi-Uh-dez"/>
+                            <constraint firstItem="wQP-1F-UhQ" firstAttribute="centerX" secondItem="AoQ-wE-suF" secondAttribute="centerX" id="ohz-Cg-JJY"/>
+                            <constraint firstItem="GFz-CH-n9T" firstAttribute="centerX" secondItem="AoQ-wE-suF" secondAttribute="centerX" id="v1k-ej-UIz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="amountLabel" destination="ZfJ-u2-lAN" id="eTP-Bi-lc5"/>
+                        <outlet property="bacLabel" destination="0Iu-ze-kie" id="RA8-ZA-b0e"/>
+                        <outlet property="calLabel" destination="wKL-KS-2yC" id="5LB-f9-ap9"/>
+                        <outlet property="drinkNameLabel" destination="f9h-Mv-8RJ" id="cGi-eK-VP9"/>
+                        <outlet property="percentLabel" destination="wQP-1F-UhQ" id="RAp-Fo-2Vb"/>
+                        <outlet property="strengthLabel" destination="ic0-hw-BfH" id="CQv-B1-DfS"/>
+                        <segue destination="GhO-HF-qU4" kind="show" identifier="toEditPage" id="LkZ-ML-2eu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tO7-mV-zRh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="798" y="-1329"/>
+        </scene>
         <!--History-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
@@ -70,65 +187,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="History" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lsd-V6-8Gv">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="History" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lsd-V6-8Gv">
                                 <rect key="frame" x="249" y="20" width="112" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="105" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="bad-qB-5zI">
-                                <rect key="frame" x="20" y="58" width="574" height="493"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="105" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="bad-qB-5zI">
+                                <rect key="frame" x="0.0" y="58" width="600" height="493"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="logCell" rowHeight="105" id="ewP-cG-mTX" customClass="DrinkLogTableViewCell" customModule="drank" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="22" width="574" height="105"/>
+                                        <rect key="frame" x="0.0" y="22" width="600" height="105"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ewP-cG-mTX" id="2lt-tD-zAx">
-                                            <rect key="frame" x="0.0" y="0.0" width="574" height="104"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="104"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DrinkName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Omk-HJ-bvp">
-                                                    <rect key="frame" x="125" y="33" width="136" height="38"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="DrinkName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Omk-HJ-bvp">
+                                                    <rect key="frame" x="125" y="16" width="136" height="38"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6rj-KK-DkD">
-                                                    <rect key="frame" x="8" y="2" width="100" height="100"/>
-                                                    <animations/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9.0 % Alc" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Elj-Xm-Z97">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="9.0 % Alc" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Elj-Xm-Z97">
                                                     <rect key="frame" x="496" y="33" width="70" height="21"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100 Cal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zr3-vq-iJs">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="100 Cal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zr3-vq-iJs">
                                                     <rect key="frame" x="508" y="49" width="58" height="22"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timestamp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeO-Ax-1Si">
-                                                    <rect key="frame" x="294" y="41" width="86" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Timestamp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeO-Ax-1Si">
+                                                    <rect key="frame" x="150" y="49" width="86" height="21"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xW-6e-xlY">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="$0.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xW-6e-xlY">
                                                     <rect key="frame" x="521" y="14" width="45" height="21"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6rj-KK-DkD">
+                                                    <rect key="frame" x="8" y="2" width="100" height="100"/>
+                                                    <animations/>
+                                                </imageView>
                                             </subviews>
                                             <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="3xW-6e-xlY" secondAttribute="trailing" id="6d2-hP-FN9"/>
+                                                <constraint firstItem="YeO-Ax-1Si" firstAttribute="leading" secondItem="6rj-KK-DkD" secondAttribute="trailing" constant="42" id="Dgh-Vz-R1c"/>
+                                                <constraint firstItem="Omk-HJ-bvp" firstAttribute="leading" secondItem="6rj-KK-DkD" secondAttribute="trailing" constant="17" id="SZT-ad-29n"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Elj-Xm-Z97" secondAttribute="trailing" id="dWb-6M-yBC"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="zr3-vq-iJs" secondAttribute="trailing" id="ee3-ht-mR7"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="6rj-KK-DkD" secondAttribute="leading" id="ifl-WO-Lxw"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
                                         <connections>
@@ -149,10 +274,15 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lsd-V6-8Gv" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="e4e-Qh-U9t"/>
+                            <constraint firstItem="bad-qB-5zI" firstAttribute="width" secondItem="QS5-Rx-YEW" secondAttribute="width" id="muy-4B-CC7"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="History" image="second" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="tableView" destination="bad-qB-5zI" id="bCO-Pa-y5N"/>
+                        <segue destination="26Y-1i-tsW" kind="show" identifier="toHistDetail" id="5vu-NI-S96"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -194,29 +324,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="7RK-ff-Qzq">
-                                <rect key="frame" x="195" y="279" width="210" height="42"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Friends" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pVa-B9-2nv">
+                                <rect key="frame" x="242" y="17" width="117" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="111" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="H2X-CU-InZ">
+                                <rect key="frame" x="0.0" y="54" width="600" height="497"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tav-dm-wnZ">
-                                <rect key="frame" x="192" y="329" width="216" height="17"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="111" id="n2r-pi-adu">
+                                        <rect key="frame" x="0.0" y="22" width="600" height="111"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="n2r-pi-adu" id="oxD-8Y-PbG">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="110"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tda-12-2yj">
+                                                    <rect key="frame" x="8" y="5" width="100" height="100"/>
+                                                    <animations/>
+                                                </imageView>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="leadingMargin" secondItem="tda-12-2yj" secondAttribute="leading" id="kNX-1n-6rU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="7RK-ff-Qzq" secondAttribute="centerY" id="bsw-Za-TsQ"/>
-                            <constraint firstItem="tav-dm-wnZ" firstAttribute="top" secondItem="7RK-ff-Qzq" secondAttribute="bottom" constant="8" symbolic="YES" id="lC6-t8-yNc"/>
-                            <constraint firstAttribute="centerX" secondItem="7RK-ff-Qzq" secondAttribute="centerX" id="obg-IH-iED"/>
-                            <constraint firstItem="tav-dm-wnZ" firstAttribute="centerX" secondItem="7RK-ff-Qzq" secondAttribute="centerX" id="onu-Uc-A7B"/>
+                            <constraint firstItem="pVa-B9-2nv" firstAttribute="centerX" secondItem="jBa-Ca-EQc" secondAttribute="centerX" id="Lh5-2b-8vO"/>
+                            <constraint firstItem="H2X-CU-InZ" firstAttribute="width" secondItem="jBa-Ca-EQc" secondAttribute="width" id="meD-VX-QdI"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Friends" image="second" id="NF3-6b-ROA"/>
@@ -529,7 +674,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w13-2C-aBk">
-                                <rect key="frame" x="23" y="131" width="73" height="30"/>
+                                <rect key="frame" x="23" y="155" width="73" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Very Weak"/>
@@ -538,7 +683,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HF3-o8-sd1">
-                                <rect key="frame" x="104" y="131" width="38" height="30"/>
+                                <rect key="frame" x="104" y="155" width="38" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Weak"/>
@@ -547,7 +692,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5JP-lY-Fqo">
-                                <rect key="frame" x="150" y="131" width="63" height="30"/>
+                                <rect key="frame" x="150" y="155" width="63" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Standard"/>
@@ -556,7 +701,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RwN-ZP-fML">
-                                <rect key="frame" x="221" y="131" width="46" height="30"/>
+                                <rect key="frame" x="221" y="155" width="46" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Strong"/>
@@ -565,7 +710,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWq-RI-H5Z">
-                                <rect key="frame" x="275" y="131" width="77" height="30"/>
+                                <rect key="frame" x="275" y="155" width="77" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="VeryStrong"/>
@@ -575,6 +720,20 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100 Calories" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZF2-Ho-Qzg">
                                 <rect key="frame" x="140" y="83" width="95" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.08 % Potential B.A.C." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mza-fu-91G">
+                                <rect key="frame" x="100" y="107" width="174" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How strong was this drink?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zg8-y9-C8H">
+                                <rect key="frame" x="84" y="136" width="207" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -604,18 +763,8 @@
                                     <action selector="hadOneDrink:" destination="GhO-HF-qU4" eventType="touchUpInside" id="6Jk-LM-L8c"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIY-JQ-PUj">
-                                <rect key="frame" x="138" y="271" width="100" height="30"/>
-                                <animations/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Two"/>
-                                <connections>
-                                    <action selector="hadTwoDrinks:" destination="GhO-HF-qU4" eventType="touchUpInside" id="89B-7L-IcT"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqW-jb-DQ7">
-                                <rect key="frame" x="138" y="331" width="100" height="30"/>
+                                <rect key="frame" x="135" y="279" width="100" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -635,7 +784,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZ2-Cj-D4Y">
-                                <rect key="frame" x="62" y="592" width="250" height="50"/>
+                                <rect key="frame" x="62" y="554" width="250" height="50"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -645,7 +794,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAP-7F-7bV">
-                                <rect key="frame" x="112" y="192" width="150" height="20"/>
+                                <rect key="frame" x="112" y="199" width="150" height="20"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -658,6 +807,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIY-JQ-PUj">
+                                <rect key="frame" x="135" y="331" width="100" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Two"/>
+                                <connections>
+                                    <action selector="hadTwoDrinks:" destination="GhO-HF-qU4" eventType="touchUpInside" id="89B-7L-IcT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -671,11 +830,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aKe-Hw-euK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2045.5" y="77.5"/>
+            <point key="canvasLocation" x="2102.5" y="279.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="LkZ-ML-2eu"/>
+    </inferredMetricsTieBreakers>
 </document>

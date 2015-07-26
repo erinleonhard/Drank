@@ -16,6 +16,7 @@
 		11D392C61B64203F003356DA /* drankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D392C51B64203F003356DA /* drankTests.swift */; };
 		2A9719631B649A7700B45672 /* DrinkLogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9719621B649A7700B45672 /* DrinkLogTableViewCell.swift */; };
 		2A9719691B64D8C600B45672 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9719681B64D8C600B45672 /* HistoryViewController.swift */; };
+		2A9719731B64F79200B45672 /* HistoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9719721B64F79200B45672 /* HistoryDetailViewController.swift */; };
 		2AC88AAA1B6434F80009CF4F /* NewCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC88AA91B6434F80009CF4F /* NewCategoryViewController.swift */; };
 		2AC88AAE1B64520F0009CF4F /* DrinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC88AAD1B64520F0009CF4F /* DrinksViewController.swift */; };
 		2AC88AB01B645C260009CF4F /* DrinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC88AAF1B645C260009CF4F /* DrinkTableViewCell.swift */; };
@@ -46,6 +47,7 @@
 		11D392C51B64203F003356DA /* drankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drankTests.swift; sourceTree = "<group>"; };
 		2A9719621B649A7700B45672 /* DrinkLogTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkLogTableViewCell.swift; sourceTree = "<group>"; };
 		2A9719681B64D8C600B45672 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		2A9719721B64F79200B45672 /* HistoryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryDetailViewController.swift; sourceTree = "<group>"; };
 		2AC88AA91B6434F80009CF4F /* NewCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCategoryViewController.swift; sourceTree = "<group>"; };
 		2AC88AAD1B64520F0009CF4F /* DrinksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinksViewController.swift; sourceTree = "<group>"; };
 		2AC88AAF1B645C260009CF4F /* DrinkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkTableViewCell.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				2AC88AA91B6434F80009CF4F /* NewCategoryViewController.swift */,
 				11D392B11B64203F003356DA /* SecondViewController.swift */,
 				11D392B31B64203F003356DA /* Main.storyboard */,
+				2A9719721B64F79200B45672 /* HistoryDetailViewController.swift */,
 				2A9719621B649A7700B45672 /* DrinkLogTableViewCell.swift */,
 				2AC88AB11B645C6A0009CF4F /* DrinkDetailViewController.swift */,
 				2AC88AAF1B645C260009CF4F /* DrinkTableViewCell.swift */,
@@ -235,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A9719731B64F79200B45672 /* HistoryDetailViewController.swift in Sources */,
 				2AC88AB01B645C260009CF4F /* DrinkTableViewCell.swift in Sources */,
 				11D392B21B64203F003356DA /* SecondViewController.swift in Sources */,
 				2AC88AAA1B6434F80009CF4F /* NewCategoryViewController.swift in Sources */,
