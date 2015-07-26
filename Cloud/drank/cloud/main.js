@@ -7,34 +7,39 @@ Parse.Cloud.define("hello", function(request, response) {
 
 Parse.Cloud.define("TestInput", function(request, response){
 	var input = request.params.input;
-	var userID = Parse.User.current();
+	/*var userID = Parse.User.current().fetch();/*.then(function(user){
+		user.get('name');
+	});*/
+	var userID = Parse.User.current().get('email');
 	response.success("Hit" + input + userID);
 
 });
 
-Parse.Cloud.define("sysActive", function(request, response) {
-	// body...
-	Parse.User.login("DelPZfGTtw", "passsword",{
-		success: function (user) {
-			response.success(worked);
-			// body...
-		},
-		error: function(user, error){
-			response.success("failed");
-		}
-
-			});
-	response.success("worked?");
-	//response.error("failed");
-})
 
 Parse.Cloud.define("addADrink", function(request, response){
-	var currentUser = Parse.User.current();
+	var currentUser = Parse.User.current().get('email');
 	if(!currentUser){
-		response.error("failed - no current User");
+		response.error("failed - no current User" + currentUser);
 		return;
 	}
-	response.success("drink added");
+	var drink_historyTable = Parse.Object.extend("Drink_History");
+	var userTable = Parse.Object.extend("User");
+	var userQuery = new Parse.Query(userTable);
+	userQuery.equalTo("email", currentUser);
+	//var usersTable = Parse.Object.extend(
+	var historyQuery = new Parse.Query(drink_historyTable);
+	historyQuery.matchesQuery("UserID", userQuery);
+	//historyQuery.descending("updatedAt");
+
+	historyQuery.find({
+		success: function(results){
+			response.success(results);
+		},
+		error: function(response){
+			response.error("failed to find previous Drinks");
+		}
+
+	});
 });
 
 Parse.Cloud.define("grabDrinkByType", function(request, response){
@@ -55,13 +60,7 @@ Parse.Cloud.define("grabDrinkByType", function(request, response){
 	typesQuery.exists("objectId");
 	typeRelationsQurey.matchesQuery("DrinkTypeID", typesQuery);
 	typeRelationsQurey.exists("DrinkID");
-	//drinksQuery.equalTo("public", true);
-	//if not switch
-	//drinksQuery.matchesQuery("DrinkID", typeRelationsQurey.DrinkID);
 	typeRelationsQurey.include("DrinkID");
-/*	drinksQuery.matches(a, b, c)
-	drinksQuery.matchesQuery(a, b)
-	drinksQuery.matchesKeyInQuery(a, b, c)*/
 
 	typeRelationsQurey.find({
 		success: function(results){
@@ -69,16 +68,10 @@ Parse.Cloud.define("grabDrinkByType", function(request, response){
 			var drinks = [];
 			var i;
 			for( var i=0; i<results.length; i++){
-				//var jsonBlob = {}
-
 				drinks[i] = results[i].get("DrinkID");
 			}
 
-
-			response.success(drinks);
-			//response.success(results.get('DrinkID'));
-
-			//var id = results[0].get('objectID');
+			response.success(JSON.stringify({"drinks": drinks}));
 		},
 		error: function(results){
 			response.error("failed to find");
@@ -86,20 +79,34 @@ Parse.Cloud.define("grabDrinkByType", function(request, response){
 	});
 });
 
-/*Parse.Cloud.define("AddADrink", function(request, response){
+Parse.Cloud.define("grabDrinksFromTonight", function(request, response){
+	var TWELVE_HOURS = 60*60*1000*12;
 
-});*/
 
-// /functions/TestInput?movie=hit
+	// bools ((new Date)-myDate) < ONE_HOUR
 
-/*var user = new Parse.User(){
-	user.set("username", name);
-	user.set("passsword", password);
-	user.set("email", email);
+});
 
-	//
-	user.set("weight", weight);
-	user.set("isMale", true);
-	user.set(")
-}*/
+
+
+
+var _newBAC = function(quantity, isMale, weight){
+	var bac = (quantity * 105.5)/weight;
+	var genderConstant = isMale ? 0.68 : 0.55;
+	return bac * genderConstant;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
