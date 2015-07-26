@@ -35,6 +35,10 @@
 		11D393681B6435A5003356DA /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D393621B6435A5003356DA /* ParseUI.framework */; };
 		11D3936D1B64386B003356DA /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D3936C1B64386B003356DA /* Accounts.framework */; };
 		11D3936F1B643876003356DA /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D3936E1B643876003356DA /* Social.framework */; };
+		11D393711B644DC3003356DA /* TabMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D393701B644DC3003356DA /* TabMenuController.swift */; };
+		11D393731B64563E003356DA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D393721B64563E003356DA /* WelcomeViewController.swift */; };
+		2AC88AAA1B6434F80009CF4F /* NewCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC88AA91B6434F80009CF4F /* NewCategoryViewController.swift */; };
+		2AC88AAC1B6438100009CF4F /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC88AAB1B6438100009CF4F /* CategoryCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +83,8 @@
 		11D393691B64366A003356DA /* drank-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "drank-Bridging-Header.h"; sourceTree = "<group>"; };
 		11D3936C1B64386B003356DA /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		11D3936E1B643876003356DA /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		11D393701B644DC3003356DA /* TabMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabMenuController.swift; sourceTree = "<group>"; };
+		11D393721B64563E003356DA /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		2AC88AA91B6434F80009CF4F /* NewCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCategoryViewController.swift; sourceTree = "<group>"; };
 		2AC88AAB1B6438100009CF4F /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,6 +176,8 @@
 				11D392B81B64203F003356DA /* LaunchScreen.xib */,
 				11D392AB1B64203F003356DA /* Supporting Files */,
 				11D393691B64366A003356DA /* drank-Bridging-Header.h */,
+				11D393701B644DC3003356DA /* TabMenuController.swift */,
+				11D393721B64563E003356DA /* WelcomeViewController.swift */,
 			);
 			path = drank;
 			sourceTree = "<group>";
@@ -303,9 +311,11 @@
 			files = (
 				11D392B21B64203F003356DA /* SecondViewController.swift in Sources */,
 				2AC88AAC1B6438100009CF4F /* CategoryCollectionViewCell.swift in Sources */,
+				11D393711B644DC3003356DA /* TabMenuController.swift in Sources */,
 				2AC88AAA1B6434F80009CF4F /* NewCategoryViewController.swift in Sources */,
 				11D392AE1B64203F003356DA /* AppDelegate.swift in Sources */,
 				11D392B01B64203F003356DA /* FirstViewController.swift in Sources */,
+				11D393731B64563E003356DA /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,7 +15,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
             endingLineNumber = "26"
-            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkName = "applicationWillResignActive(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -31,7 +31,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "27"
             endingLineNumber = "27"
-            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkName = "applicationWillResignActive(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
