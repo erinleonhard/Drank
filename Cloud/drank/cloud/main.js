@@ -25,12 +25,65 @@ Parse.Cloud.define("sysActive", function(request, response) {
 
 			});
 	response.success("worked?");
-	response.error("failed");
+	//response.error("failed");
 })
 
 Parse.Cloud.define("addADrink", function(request, response){
-	var currentUser = Parse.User.
+	var currentUser = Parse.User.current();
+	if(!currentUser){
+		response.error("failed - no current User");
+		return;
+	}
 	response.success("drink added");
+});
+
+Parse.Cloud.define("grabDrinkByType", function(request, response){
+	var drinkType = request.params.DrinkType;
+	alert(drinkType)
+	//Grab Tables
+	var drink_typesTable = Parse.Object.extend("Drink_Types");
+	var drink_Type_relationsTable = Parse.Object.extend("Drink_DrinkType_Relation");
+	var drinksTable = Parse.Object.extend("Drinks");
+	
+	//Start Queries
+	var typesQuery = new Parse.Query(drink_typesTable);
+	var typeRelationsQurey = new Parse.Query(drink_Type_relationsTable);
+	var drinksQuery = new Parse.Query(drinksTable);
+
+	//Where clauses/Joins
+	typesQuery.equalTo("Name", drinkType);
+	typesQuery.exists("objectId");
+	typeRelationsQurey.matchesQuery("DrinkTypeID", typesQuery);
+	typeRelationsQurey.exists("DrinkID");
+	//drinksQuery.equalTo("public", true);
+	//if not switch
+	//drinksQuery.matchesQuery("DrinkID", typeRelationsQurey.DrinkID);
+	typeRelationsQurey.include("DrinkID");
+/*	drinksQuery.matches(a, b, c)
+	drinksQuery.matchesQuery(a, b)
+	drinksQuery.matchesKeyInQuery(a, b, c)*/
+
+	typeRelationsQurey.find({
+		success: function(results){
+			alert("Found drinks");
+			var drinks = [];
+			var i;
+			for( var i=0; i<results.length; i++){
+				//var jsonBlob = {}
+
+				drinks[i] = results[i].get("DrinkID");
+			}
+
+
+			response.success(drinks);
+			//response.success(results.get('DrinkID'));
+
+			//var id = results[0].get('objectID');
+		},
+		error: function(results){
+			response.error("failed to find");
+		}
+	});
 });
 
 /*Parse.Cloud.define("AddADrink", function(request, response){
