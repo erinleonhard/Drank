@@ -15,7 +15,7 @@ Parse.Cloud.define("TestInput", function(request, response){
 
 });
 
-
+//{"drinkID":"f0VDg2Y3jo"}, {"strength": "100}, {"quantity": 1 }
 Parse.Cloud.define("addADrink", function(request, response){
 
 	if(!Parse.User.current()){
@@ -26,9 +26,24 @@ Parse.Cloud.define("addADrink", function(request, response){
 
 	var User = Parse.Object.extend("User");
 	var query = new Parse.Query(User);
+
+	var drinkID = request.params.drinkID;
+	var strength = request.params.strength;
+	var quantity = request.params.quantity;
+
+
+
 	query.get('DelPZfGTtw',{
 		success: function(result){
-			response.success(result.testLoad());
+			var array = result.addDrink(drinkID, strength, quantity );
+			result.save(null, {
+				success: function(r){
+					response.success(r +"  "+ array);
+				},
+				error: function(r, error){
+					response.error(r + "  " + error + " ---- " + array);
+				}
+			});
 		},
 		error: function(object, error){
 			response.error("errored out " + object +" " + error);
@@ -113,11 +128,7 @@ Parse.Cloud.define("grabDrinksFromTonight", function(request, response){
 	// bools ((new Date)-myDate) < ONE_HOUR
 });
 
-var _newBAC = function(quantity, isMale, weight){
-	var bac = (quantity * 105.5)/weight;
-	var genderConstant = isMale ? 0.68 : 0.55;
-	return bac * genderConstant;
-}
+
 
 
 

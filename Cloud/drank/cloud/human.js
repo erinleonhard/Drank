@@ -1,16 +1,17 @@
 var User = Parse.Object.extend("User", {
 	
-	
-	
+
+
 	testLoad: function(){
 		return "Hello world, welcome to humans";
 	},
 
 	//drinkHistory
 	getBAC: function (){
-		if(this.drinkHistory.length === 0)
+		//return this.get("drinkHistory");
+		if(typeof(array) ===Array || this.get("drinkHistory").length === 0)
 			return 0;
-		var lastDrink = this.drinkHistory[this.drinkHistory.length -1];
+		var lastDrink = this.get("drinkHistory")[this.get("drinkHistory").length -1];
 		var dT = ((new Date) - lastDrink.timeStamp)/3600000;
 		bac = lastDrink.bac - (0.015 * dT);
 		if(bac > 0)
@@ -23,7 +24,7 @@ var User = Parse.Object.extend("User", {
 	addDrink: function(drinkID, strength, quantity){
 		var startingBAC = this.getBAC();
 		var quantityAdj = quantity * strength; 
-		var additonalBAC = _newBAC(quantityAdj, isMale, weight);
+		var additonalBAC = _newBAC(quantityAdj, this.get("isMale"), this.get("weight"));
 		var drink = {
 			drinkID: drinkID,
 			strength: strength,
@@ -31,7 +32,17 @@ var User = Parse.Object.extend("User", {
 			timeStamp: new Date,
 			bac: startingBAC + additonalBAC
 		}
-		this.drinkHistory.push(bac);
+		var array = this.get("drinkHistory")
+		if(typeof(array) ===Array)
+			array.push(drink);
+		else{
+			array = [];
+			array[0] = drink;
+		}
+		this.set("drinkHistory", array);
+		return JSON.stringify(array);
+
+		//return this.get("isMale");
 	},
 
 	stashPastNightOut: function(){
@@ -54,3 +65,10 @@ var User = Parse.Object.extend("User", {
 	}
 
 });
+
+
+var _newBAC = function(quantity, isMale, weight){
+	var bac = (quantity * 105.5)/weight;
+	var genderConstant = isMale ? 0.68 : 0.55;
+	return bac * genderConstant;
+}
