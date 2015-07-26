@@ -22,6 +22,7 @@ var User = Parse.Object.extend("User", {
 
 //{"drinkID":"f0VDg2Y3jo", "strength": "1.00", "quantity": "0.5" }
 // quantiy = % Alc * number of drinks EX: shot of KC = 0.5 * 2
+
 	addDrink: function(drinkID, strength, quantity){
 		var startingBAC = this.getBAC();
 		var quantityAdj = quantity * strength; 
@@ -43,6 +44,17 @@ var User = Parse.Object.extend("User", {
 		this.set("drinkHistory", array);
 		return JSON.stringify("1 " + array);
 		//return JSON.stringify({drinkID: drinkID, strength: strength,quantity: quantity, additonalBAC: additonalBAC});
+	},
+
+	getDrinkHistoryID: function(){
+		var drinkStructArray = this.get("drinkHistory");
+		if(!Array.isArray(drinkStructArray))
+			return [];
+		var returnArray = [];
+		for(var i =0; i<drinkStructArray.length; i++){
+			returnArray[i] = drinkStructArray[i].drinkID;
+		}
+		return returnArray;
 	},
 
 	stashPastNightOut: function(){

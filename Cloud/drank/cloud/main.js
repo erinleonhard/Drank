@@ -25,25 +25,48 @@ Parse.Cloud.define("loadDrinkHistory", function(request, response){
 	var User = Parse.Object.extend("User");
 	var query = new Parse.Query(User);
 
-
-
 	query.get('DelPZfGTtw',{
 		success: function(result){
-			var array = result.addDrink(drinkID, strength, quantity );
-			result.save(null, {
-				success: function(r){
-					response.success(r +"  "+ array);
-				},
-				error: function(r, error){
-					response.error(r + "  " + error + " ---- " + array);
-				}
-			});
+			var drinks = result.get("drinkHistory");
+			response.success(drinks);
 		},
 		error: function(object, error){
 			response.error("errored out " + object +" " + error);
 		}
 	});
 });
+
+Parse.Cloud.define("loadRecentTypes", function(request, response){
+	if(!Parse.User.current()){
+		response.error("failed - no current User" + currentUser);
+		return;
+	}
+	var email = Parse.User.current().get('email');
+
+	var User = Parse.Object.extend("User");
+	var query = new Parse.Query(User);
+
+	query.get('DelPZfGTtw',{
+		success: function(result){
+			var drinks = result.getDrinkHistoryID();
+			var innerQuery = new Parse.Query("Drinks");
+			innerQuery.containedIn("objectId", drinks);
+			innerQuery.find({
+				success: function(r){
+					response.success(r);
+				},
+				error: function(o, e){
+					response.error("errored out " + o +" " + e);
+				}
+			})
+			//response.success(drinks);
+		},
+		error: function(object, error){
+			response.error("errored out " + object +" " + error);
+		}
+	});
+});
+
 
 //{"drinkID":"f0VDg2Y3jo", "strength": "1.00", "quantity": "0.5" }
 Parse.Cloud.define("addADrink", function(request, response){
