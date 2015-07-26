@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		113C0C191B64FECD00529136 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C0C181B64FECD00529136 /* ProfileViewController.swift */; };
 		11D392AE1B64203F003356DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D392AD1B64203F003356DA /* AppDelegate.swift */; };
 		11D392B01B64203F003356DA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D392AF1B64203F003356DA /* FirstViewController.swift */; };
 		11D392B21B64203F003356DA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D392B11B64203F003356DA /* SecondViewController.swift */; };
@@ -37,16 +38,13 @@
 		11D393731B64563E003356DA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D393721B64563E003356DA /* WelcomeViewController.swift */; };
 		11D393751B646D74003356DA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D393741B646D74003356DA /* LoginViewController.swift */; };
 		11D393771B646DF1003356DA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D393761B646DF1003356DA /* SignUpViewController.swift */; };
-		2AC88AAA1B6434F80009CF4F /* NewCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC88AA91B6434F80009CF4F /* NewCategoryViewController.swift */; };
-		2AC88AAC1B6438100009CF4F /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC88AAB1B6438100009CF4F /* CategoryCollectionViewCell.swift */; };
-		D7A3E92A1B64501300624E30 /* imageAssets in Resources */ = {isa = PBXBuildFile; fileRef = D7A3E9291B64501300624E30 /* imageAssets */; };
-		D7A3E92C1B6450F700624E30 /* SplashScreens in Resources */ = {isa = PBXBuildFile; fileRef = D7A3E92B1B6450F700624E30 /* SplashScreens */; };
 		2A9719631B649A7700B45672 /* DrinkLogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9719621B649A7700B45672 /* DrinkLogTableViewCell.swift */; };
 		2A9719671B649C6600B45672 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9719661B649C6600B45672 /* HistoryViewController.swift */; };
-		2AC88AAA1B6434F80009CF4F /* NewCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC88AA91B6434F80009CF4F /* NewCategoryViewController.swift */; };
 		2AC88AAE1B64520F0009CF4F /* DrinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC88AAD1B64520F0009CF4F /* DrinksViewController.swift */; };
 		2AC88AB01B645C260009CF4F /* DrinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC88AAF1B645C260009CF4F /* DrinkTableViewCell.swift */; };
 		2AC88AB31B645C6A0009CF4F /* DrinkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC88AB11B645C6A0009CF4F /* DrinkDetailViewController.swift */; };
+		D7A3E92A1B64501300624E30 /* imageAssets in Resources */ = {isa = PBXBuildFile; fileRef = D7A3E9291B64501300624E30 /* imageAssets */; };
+		D7A3E92C1B6450F700624E30 /* SplashScreens in Resources */ = {isa = PBXBuildFile; fileRef = D7A3E92B1B6450F700624E30 /* SplashScreens */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		113C0C181B64FECD00529136 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		11D392A81B64203F003356DA /* drank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11D392AC1B64203F003356DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11D392AD1B64203F003356DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,16 +94,14 @@
 		11D393721B64563E003356DA /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		11D393741B646D74003356DA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		11D393761B646DF1003356DA /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		2AC88AA91B6434F80009CF4F /* NewCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCategoryViewController.swift; sourceTree = "<group>"; };
-		2AC88AAB1B6438100009CF4F /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
-		D7A3E9291B64501300624E30 /* imageAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = imageAssets; path = ../../imageAssets; sourceTree = "<group>"; };
-		D7A3E92B1B6450F700624E30 /* SplashScreens */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SplashScreens; path = ../../SplashScreens; sourceTree = "<group>"; };
 		2A9719621B649A7700B45672 /* DrinkLogTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkLogTableViewCell.swift; sourceTree = "<group>"; };
 		2A9719661B649C6600B45672 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = ../HistoryViewController.swift; sourceTree = "<group>"; };
 		2AC88AA91B6434F80009CF4F /* NewCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCategoryViewController.swift; sourceTree = "<group>"; };
 		2AC88AAD1B64520F0009CF4F /* DrinksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinksViewController.swift; sourceTree = "<group>"; };
 		2AC88AAF1B645C260009CF4F /* DrinkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkTableViewCell.swift; sourceTree = "<group>"; };
 		2AC88AB11B645C6A0009CF4F /* DrinkDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkDetailViewController.swift; sourceTree = "<group>"; };
+		D7A3E9291B64501300624E30 /* imageAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = imageAssets; path = ../../imageAssets; sourceTree = "<group>"; };
+		D7A3E92B1B6450F700624E30 /* SplashScreens */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SplashScreens; path = ../../SplashScreens; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +199,7 @@
 				11D393721B64563E003356DA /* WelcomeViewController.swift */,
 				11D393741B646D74003356DA /* LoginViewController.swift */,
 				11D393761B646DF1003356DA /* SignUpViewController.swift */,
+				113C0C181B64FECD00529136 /* ProfileViewController.swift */,
 			);
 			path = drank;
 			sourceTree = "<group>";
@@ -338,17 +336,15 @@
 			files = (
 				2AC88AB01B645C260009CF4F /* DrinkTableViewCell.swift in Sources */,
 				11D392B21B64203F003356DA /* SecondViewController.swift in Sources */,
-				2AC88AAC1B6438100009CF4F /* CategoryCollectionViewCell.swift in Sources */,
 				11D393711B644DC3003356DA /* TabMenuController.swift in Sources */,
-				2AC88AAA1B6434F80009CF4F /* NewCategoryViewController.swift in Sources */,
 				11D393751B646D74003356DA /* LoginViewController.swift in Sources */,
-				2AC88AAA1B6434F80009CF4F /* NewCategoryViewController.swift in Sources */,
 				2A9719631B649A7700B45672 /* DrinkLogTableViewCell.swift in Sources */,
 				2AC88AB31B645C6A0009CF4F /* DrinkDetailViewController.swift in Sources */,
 				2AC88AAE1B64520F0009CF4F /* DrinksViewController.swift in Sources */,
 				2A9719671B649C6600B45672 /* HistoryViewController.swift in Sources */,
 				11D392AE1B64203F003356DA /* AppDelegate.swift in Sources */,
 				11D393771B646DF1003356DA /* SignUpViewController.swift in Sources */,
+				113C0C191B64FECD00529136 /* ProfileViewController.swift in Sources */,
 				11D392B01B64203F003356DA /* FirstViewController.swift in Sources */,
 				11D393731B64563E003356DA /* WelcomeViewController.swift in Sources */,
 			);
@@ -479,6 +475,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -487,7 +484,6 @@
 					"/Users/erinleonhard/Dropbox/Xtern/Drank/drank/parse-library-1.7.5",
 					"$(PROJECT_DIR)/parse-library-1.7.5",
 				);
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = drank/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -503,6 +499,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -511,7 +508,6 @@
 					"/Users/erinleonhard/Dropbox/Xtern/Drank/drank/parse-library-1.7.5",
 					"$(PROJECT_DIR)/parse-library-1.7.5",
 				);
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = drank/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
