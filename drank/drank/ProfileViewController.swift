@@ -22,9 +22,51 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var currentUser = PFUser.currentUser()
         WeightInputTextField.hidden = true;
         OKBtn.hidden = true;
+        
+        var currentUser = PFUser.currentUser()
+        var name = "";
+        var sex = "";
+        var weight = "";
+        var username = "";
+        var email = "";
+        
+        if let name = currentUser!["name"] as? String {
+            self.NameTextField.text = name
+        } else {
+            self.NameTextField.text = ""
+        }
+        
+        if let sex = currentUser!["isMale"] as? Bool {
+            if (sex == true) {
+                self.SexTextField.text = "Male"
+            } else {
+                self.SexTextField.text = "Female"
+            }
+        } else {
+            self.SexTextField.text = ""
+        }
+        
+        
+        if let weight = currentUser!["weight"] as? Int {
+            self.WeightBtn.setTitle(String(weight), forState: .Normal)
+            self.WeightInputTextField.text = String(weight);
+        } else {
+            self.WeightBtn.setTitle("", forState: .Normal)
+        }
+        
+        if let username = currentUser!["username"] as? String {
+            self.UsernameTextField.text = username;
+        } else {
+            self.UsernameTextField.text = "";
+        }
+        
+        if let email = currentUser!["email"] as? String {
+            self.EmailTextField.text = email
+        } else {
+            self.EmailTextField.text = ""
+        }
         
     }
     
