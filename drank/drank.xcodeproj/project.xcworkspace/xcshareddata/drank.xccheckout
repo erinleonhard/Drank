@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>B6385F66-B2FA-47EC-80BC-826E57018C51</string>
 	<key>IDESourceControlProjectName</key>
-	<string>drank</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>F416951BECFE6084095C371392C17B194A5A2729</key>
 		<string>https://github.com/erinleonhard/Drank/</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>drank/drank.xcodeproj</string>
+	<string>drank/drank.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>F416951BECFE6084095C371392C17B194A5A2729</key>
