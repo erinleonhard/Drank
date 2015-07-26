@@ -45,6 +45,8 @@
 		2AC88AB31B645C6A0009CF4F /* DrinkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC88AB11B645C6A0009CF4F /* DrinkDetailViewController.swift */; };
 		D7A3E92A1B64501300624E30 /* imageAssets in Resources */ = {isa = PBXBuildFile; fileRef = D7A3E9291B64501300624E30 /* imageAssets */; };
 		D7A3E92C1B6450F700624E30 /* SplashScreens in Resources */ = {isa = PBXBuildFile; fileRef = D7A3E92B1B6450F700624E30 /* SplashScreens */; };
+		D7A3E9481B65221400624E30 /* drinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A3E9461B65221400624E30 /* drinkModel.swift */; };
+		D7A3E9491B65221400624E30 /* humanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A3E9471B65221400624E30 /* humanModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,8 @@
 		2AC88AB11B645C6A0009CF4F /* DrinkDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkDetailViewController.swift; sourceTree = "<group>"; };
 		D7A3E9291B64501300624E30 /* imageAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = imageAssets; path = ../../imageAssets; sourceTree = "<group>"; };
 		D7A3E92B1B6450F700624E30 /* SplashScreens */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SplashScreens; path = ../../SplashScreens; sourceTree = "<group>"; };
+		D7A3E9461B65221400624E30 /* drinkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = drinkModel.swift; sourceTree = "<group>"; };
+		D7A3E9471B65221400624E30 /* humanModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = humanModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +185,8 @@
 		11D392AA1B64203F003356DA /* drank */ = {
 			isa = PBXGroup;
 			children = (
+				D7A3E9461B65221400624E30 /* drinkModel.swift */,
+				D7A3E9471B65221400624E30 /* humanModel.swift */,
 				2A9719661B649C6600B45672 /* HistoryViewController.swift */,
 				11D392AD1B64203F003356DA /* AppDelegate.swift */,
 				11D392AF1B64203F003356DA /* FirstViewController.swift */,
@@ -337,7 +343,9 @@
 				2AC88AB01B645C260009CF4F /* DrinkTableViewCell.swift in Sources */,
 				11D392B21B64203F003356DA /* SecondViewController.swift in Sources */,
 				11D393711B644DC3003356DA /* TabMenuController.swift in Sources */,
+				D7A3E9491B65221400624E30 /* humanModel.swift in Sources */,
 				11D393751B646D74003356DA /* LoginViewController.swift in Sources */,
+				D7A3E9481B65221400624E30 /* drinkModel.swift in Sources */,
 				2A9719631B649A7700B45672 /* DrinkLogTableViewCell.swift in Sources */,
 				2AC88AB31B645C6A0009CF4F /* DrinkDetailViewController.swift in Sources */,
 				2AC88AAE1B64520F0009CF4F /* DrinksViewController.swift in Sources */,

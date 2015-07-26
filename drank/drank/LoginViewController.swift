@@ -24,6 +24,13 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent){
+        if let touch = touches.first as? UITouch{
+            view.endEditing(true)
+            super.touchesBegan(touches, withEvent: event);
+        }
+    }
 
     @IBAction func LoginBtn(sender: AnyObject) {
         if (self.UsernameTextField.text != nil &&
