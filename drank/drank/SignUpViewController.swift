@@ -61,8 +61,8 @@ class SignUpViewController: UIViewController {
             (succeeded: Bool, error: NSError?) -> Void in
             
             if (error != nil) {
-                let errorString = error!.userInfo["error"] as? NSString
-                self.ErrorMessagesLabel.text = errorString!.capitalizedString
+                let errorString = error!.userInfo["error"] as! NSString
+                self.ErrorMessagesLabel.text = errorString.capitalizedString
             } else {
                 self.performSegueWithIdentifier("SignUpSeg", sender: self)
             }

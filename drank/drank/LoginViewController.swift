@@ -42,8 +42,8 @@ class LoginViewController: UIViewController {
                 if user != nil {
                     self.performSegueWithIdentifier("LoginSeg", sender: self)
                 } else {
-                    let errorString = error!.userInfo["error"] as? NSString
-                    self.ErrorLabel.text = errorString!.capitalizedString
+                    let errorString = error!.userInfo["error"] as! NSString
+                    self.ErrorLabel.text = errorString.capitalizedString
                 }
             }
         } else {
