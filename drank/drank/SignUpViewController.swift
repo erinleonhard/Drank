@@ -30,6 +30,13 @@ class SignUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+//    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent){
+//        if let touch = touches.first as? UITouch{
+//            view.endEditing(true)
+//            super.touchesBegan(touches, withEvent: event);
+//        }
+//    }
+    
     @IBAction func SignUpBtn(sender: AnyObject) {
         var user = PFUser()
             
@@ -44,7 +51,7 @@ class SignUpViewController: UIViewController {
             user.email = self.EmailTextField.text
             user["name"] = self.NameTextField.text
             user["isMale"] = self.MaleSelectedBtn.selected
-            user["weight"] = self.WeightTextField.text.toInt()
+            user["weight"] = Int(self.WeightTextField.text!)
         } else {
             self.ErrorMessagesLabel.text = "Must complete all fields."
             return;
@@ -54,7 +61,7 @@ class SignUpViewController: UIViewController {
             (succeeded: Bool, error: NSError?) -> Void in
             
             if (error != nil) {
-                let errorString = error!.userInfo?["error"] as? NSString
+                let errorString = error!.userInfo["error"] as? NSString
                 self.ErrorMessagesLabel.text = errorString!.capitalizedString
             } else {
                 self.performSegueWithIdentifier("SignUpSeg", sender: self)
