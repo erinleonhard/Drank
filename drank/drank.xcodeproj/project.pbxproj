@@ -33,6 +33,8 @@
 		11D393681B6435A5003356DA /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D393621B6435A5003356DA /* ParseUI.framework */; };
 		11D3936D1B64386B003356DA /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D3936C1B64386B003356DA /* Accounts.framework */; };
 		11D3936F1B643876003356DA /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D3936E1B643876003356DA /* Social.framework */; };
+		D7A3E93A1B648ADD00624E30 /* drinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A3E9391B648ADD00624E30 /* drinkModel.swift */; };
+		D7A3E9411B64BF3500624E30 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A3E9401B64BF3500624E30 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		11D393691B64366A003356DA /* drank-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "drank-Bridging-Header.h"; sourceTree = "<group>"; };
 		11D3936C1B64386B003356DA /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		11D3936E1B643876003356DA /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		D7A3E9391B648ADD00624E30 /* drinkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = drinkModel.swift; path = ../drinkModel.swift; sourceTree = "<group>"; };
+		D7A3E9401B64BF3500624E30 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +160,8 @@
 		11D392AA1B64203F003356DA /* drank */ = {
 			isa = PBXGroup;
 			children = (
+				D7A3E9401B64BF3500624E30 /* SwiftyJSON.swift */,
+				D7A3E9391B648ADD00624E30 /* drinkModel.swift */,
 				11D392AD1B64203F003356DA /* AppDelegate.swift */,
 				11D392AF1B64203F003356DA /* FirstViewController.swift */,
 				11D392B11B64203F003356DA /* SecondViewController.swift */,
@@ -242,6 +248,7 @@
 				TargetAttributes = {
 					11D392A71B64203F003356DA = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = N9LMUZB9X9;
 					};
 					11D392BE1B64203F003356DA = {
 						CreatedOnToolsVersion = 6.4;
@@ -293,8 +300,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7A3E93A1B648ADD00624E30 /* drinkModel.swift in Sources */,
 				11D392B21B64203F003356DA /* SecondViewController.swift in Sources */,
 				11D392AE1B64203F003356DA /* AppDelegate.swift in Sources */,
+				D7A3E9411B64BF3500624E30 /* SwiftyJSON.swift in Sources */,
 				11D392B01B64203F003356DA /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/erinleonhard/Dropbox/Xtern/Drank/drank/parse-library-1.7.5",
@@ -445,6 +455,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/erinleonhard/Dropbox/Xtern/Drank/drank/parse-library-1.7.5",
