@@ -13,9 +13,17 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var UsernameTextField: UITextField!
     @IBOutlet weak var PasswordTextField: UITextField!
     @IBOutlet weak var ErrorLabel: UILabel!
+    @IBOutlet weak var LoginBackBtn: UIButton!
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
         
     }
@@ -25,12 +33,12 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-//    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent){
-//        if let touch = touches.first as? UITouch{
-//            view.endEditing(true)
-//            super.touchesBegan(touches, withEvent: event);
-//        }
-//    }
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
+        if let _ = touches.first {
+            view.endEditing(true)
+            super.touchesBegan(touches, withEvent: event);
+        }
+    }
 
     @IBAction func LoginBtn(sender: AnyObject) {
         if (self.UsernameTextField.text != nil &&

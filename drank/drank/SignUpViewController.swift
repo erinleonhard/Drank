@@ -18,6 +18,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var FemaleSelectedBtn: UISegmentedControl!
     @IBOutlet weak var MaleSelectedBtn: UISegmentedControl!
     @IBOutlet weak var ErrorMessagesLabel: UILabel!
+    @IBOutlet weak var BackBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +53,7 @@ class SignUpViewController: UIViewController {
             user["name"] = self.NameTextField.text
             user["isMale"] = self.MaleSelectedBtn.selected
             user["weight"] = Int(self.WeightTextField.text!)
+            user["drinkHistory"] = []
         } else {
             self.ErrorMessagesLabel.text = "Must complete all fields."
             return;

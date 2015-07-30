@@ -38,7 +38,11 @@ class FirstViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         PFCloud.callFunctionInBackground("getBAC", withParameters: nil) {
             (response: AnyObject?, error: NSError?) -> Void in
-            self.bac = response!.doubleValue
+            if response != nil{
+                self.bac = response!.doubleValue
+            }
+            self.bac = 0;
+            
             //let dict = response as! NSDictionary
             //let array = dict["drinks"] as! NSArray
             

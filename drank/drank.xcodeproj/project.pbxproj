@@ -11,7 +11,6 @@
 		11D392AE1B64203F003356DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D392AD1B64203F003356DA /* AppDelegate.swift */; };
 		11D392B01B64203F003356DA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D392AF1B64203F003356DA /* FirstViewController.swift */; };
 		11D392B21B64203F003356DA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D392B11B64203F003356DA /* SecondViewController.swift */; };
-		11D392B51B64203F003356DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D392B31B64203F003356DA /* Main.storyboard */; };
 		11D392B71B64203F003356DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11D392B61B64203F003356DA /* Images.xcassets */; };
 		11D392BA1B64203F003356DA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11D392B81B64203F003356DA /* LaunchScreen.xib */; };
 		11D392C61B64203F003356DA /* drankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D392C51B64203F003356DA /* drankTests.swift */; };
@@ -44,6 +43,7 @@
 		2AC88AAE1B64520F0009CF4F /* DrinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC88AAD1B64520F0009CF4F /* DrinksViewController.swift */; };
 		2AC88AB01B645C260009CF4F /* DrinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC88AAF1B645C260009CF4F /* DrinkTableViewCell.swift */; };
 		2AC88AB31B645C6A0009CF4F /* DrinkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC88AB11B645C6A0009CF4F /* DrinkDetailViewController.swift */; };
+		2ADA4B8E1B69EAFF00846EDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADA4B8D1B69EAFF00846EDA /* Main.storyboard */; };
 		D7A3E92A1B64501300624E30 /* imageAssets in Resources */ = {isa = PBXBuildFile; fileRef = D7A3E9291B64501300624E30 /* imageAssets */; };
 		D7A3E92C1B6450F700624E30 /* SplashScreens in Resources */ = {isa = PBXBuildFile; fileRef = D7A3E92B1B6450F700624E30 /* SplashScreens */; };
 		D7A3E9481B65221400624E30 /* drinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A3E9461B65221400624E30 /* drinkModel.swift */; };
@@ -77,7 +77,6 @@
 		11D392AD1B64203F003356DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11D392AF1B64203F003356DA /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		11D392B11B64203F003356DA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		11D392B41B64203F003356DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11D392B61B64203F003356DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		11D392B91B64203F003356DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		11D392BF1B64203F003356DA /* drankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = drankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +113,7 @@
 		2AC88AAD1B64520F0009CF4F /* DrinksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinksViewController.swift; sourceTree = "<group>"; };
 		2AC88AAF1B645C260009CF4F /* DrinkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkTableViewCell.swift; sourceTree = "<group>"; };
 		2AC88AB11B645C6A0009CF4F /* DrinkDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkDetailViewController.swift; sourceTree = "<group>"; };
+		2ADA4B8D1B69EAFF00846EDA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D7A3E9291B64501300624E30 /* imageAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = imageAssets; path = ../../imageAssets; sourceTree = "<group>"; };
 		D7A3E92B1B6450F700624E30 /* SplashScreens */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SplashScreens; path = ../../SplashScreens; sourceTree = "<group>"; };
 		D7A3E9461B65221400624E30 /* drinkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = drinkModel.swift; sourceTree = "<group>"; };
@@ -220,12 +220,12 @@
 				D7A3E94E1B65389900624E30 /* speedometer-50.png */,
 				D7A3E9461B65221400624E30 /* drinkModel.swift */,
 				D7A3E9471B65221400624E30 /* humanModel.swift */,
+				2ADA4B8D1B69EAFF00846EDA /* Main.storyboard */,
 				2A9719661B649C6600B45672 /* HistoryViewController.swift */,
 				11D392AD1B64203F003356DA /* AppDelegate.swift */,
 				11D392AF1B64203F003356DA /* FirstViewController.swift */,
 				2AC88AA91B6434F80009CF4F /* NewCategoryViewController.swift */,
 				11D392B11B64203F003356DA /* SecondViewController.swift */,
-				11D392B31B64203F003356DA /* Main.storyboard */,
 				2A9719621B649A7700B45672 /* DrinkLogTableViewCell.swift */,
 				2AC88AB11B645C6A0009CF4F /* DrinkDetailViewController.swift */,
 				2AC88AAF1B645C260009CF4F /* DrinkTableViewCell.swift */,
@@ -355,9 +355,9 @@
 				D7A3E9511B65389900624E30 /* name-50.png in Resources */,
 				D7A3E92C1B6450F700624E30 /* SplashScreens in Resources */,
 				D7A3E95B1B65392100624E30 /* name-25.png in Resources */,
-				11D392B51B64203F003356DA /* Main.storyboard in Resources */,
 				D7A3E95A1B65392100624E30 /* group-25.png in Resources */,
 				D7A3E9591B65392100624E30 /* activity_feed_2-25.png in Resources */,
+				2ADA4B8E1B69EAFF00846EDA /* Main.storyboard in Resources */,
 				D7A3E9531B65389900624E30 /* speedometer-50.png in Resources */,
 				D7A3E92A1B64501300624E30 /* imageAssets in Resources */,
 				D7A3E95D1B65392100624E30 /* speedometer-25.png in Resources */,
@@ -421,14 +421,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		11D392B31B64203F003356DA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11D392B41B64203F003356DA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		11D392B81B64203F003356DA /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
